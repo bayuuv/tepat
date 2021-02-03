@@ -51,8 +51,8 @@ class AnggotaController extends Controller
                         ->orderBy('anggota.no_anggota', 'DESC')
                         ->get(); 
 
-            //return view('backend.dashboard.anggota.index', compact('data'))->with('select', 'all')->with('id_level', '')->with('pilihan_kedua', 'Yayasan')->with('select', 'all')->with('count', null);
-            return view('backend.dashboard.anggota.index')->with('select', 'all')->with('id_level', '')->with('pilihan_kedua', 'Yayasan')->with('select', 'all')->with('count', $data->count());
+            //return view('backend.dashboard.anggota.index', compact('data'))->with('select', 'all')->with('id_level', '')->with('pilihan_kedua', 'Pengurus Pusat')->with('select', 'all')->with('count', null);
+            return view('backend.dashboard.anggota.index')->with('select', 'all')->with('id_level', '')->with('pilihan_kedua', 'Pengurus Pusat')->with('select', 'all')->with('count', $data->count());
         }
         else{
             return redirect('login');
@@ -741,7 +741,7 @@ class AnggotaController extends Controller
                             
             Session::put('level_report', $id_level);
             Session::put('id_akun_report', null);
-            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('active',$active)->with('id_level', $id_level)->with('pilihan_kedua', 'Wilayah')->with('id_akun', '')->with('count', null);
+            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('active',$active)->with('id_level', $id_level)->with('pilihan_kedua', 'Korwil')->with('id_akun', '')->with('count', null);
         }
         if($id_level == 4){
              $data = Anggota::join('sub_jabatan', 'sub_jabatan.id_sub_jabatan', 'anggota.id_sub_jabatan')
@@ -757,7 +757,7 @@ class AnggotaController extends Controller
          
             Session::put('level_report', $id_level);                   
             Session::put('id_akun_report', null);
-            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('active',$active)->with('id_level', $id_level)->with('pilihan_kedua', 'Unit')->with('id_akun', '')->with('count', null);
+            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('active',$active)->with('id_level', $id_level)->with('pilihan_kedua', 'Korcam')->with('id_akun', '')->with('count', null);
         }
     }
     
@@ -781,7 +781,7 @@ class AnggotaController extends Controller
     
             Session::put('level_report', 3);
             Session::put('id_akun_report', $id_dewan);
-            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('id_level', 3)->with('pilihan_kedua', 'Wilayah ' . $dpc->nama_akun)->with('id_akun', $id_dewan)->with('count', $data->count());
+            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('id_level', 3)->with('pilihan_kedua', 'Korwil ' . $dpc->nama_akun)->with('id_akun', $id_dewan)->with('count', $data->count());
         }
         else{
             return redirect(url()->previous());
@@ -806,7 +806,7 @@ class AnggotaController extends Controller
     
             Session::put('level_report', 4);
             Session::put('id_akun_report', $pilihanKedua[0]->id_akun);
-            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('id_level', 4)->with('pilihan_kedua', 'Unit ' . $pac->nama_akun)->with('id_akun', $id_pac)->with('count', $data->count());
+            return view('backend.dashboard.anggota.index', compact('data'), compact('pilihanKedua'))->with('id_level', 4)->with('pilihan_kedua', 'Korcam ' . $pac->nama_akun)->with('id_akun', $id_pac)->with('count', $data->count());
         }
         else{
             return redirect(url()->previous());
