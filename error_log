@@ -1,0 +1,48 @@
+[12-Jul-2020 22:05:02 Asia/Jakarta] PHP Fatal error:  Declaration of App\Exports\AnggotaExportWhere::collection($id_level, $id_akun) must be compatible with Maatwebsite\Excel\Concerns\FromCollection::collection() in /home/kesg4851/public_html/app/Exports/AnggotaExportWhere.php on line 8
+[12-Jul-2020 22:05:40 Asia/Jakarta] PHP Fatal error:  Declaration of App\Exports\AnggotaExportWhere::collection($id_level, $id_akun) must be compatible with Maatwebsite\Excel\Concerns\FromCollection::collection() in /home/kesg4851/public_html/app/Exports/AnggotaExportWhere.php on line 8
+[12-Jul-2020 22:11:01 Asia/Jakarta] PHP Fatal error:  Declaration of App\Exports\AnggotaExportWhere::collection($tes) must be compatible with Maatwebsite\Excel\Concerns\FromCollection::collection() in /home/kesg4851/public_html/app/Exports/AnggotaExportWhere.php on line 8
+[12-Jul-2020 22:11:54 Asia/Jakarta] PHP Fatal error:  Declaration of App\Exports\AnggotaExportWhere::collection($tes) must be compatible with Maatwebsite\Excel\Concerns\FromCollection::collection() in /home/kesg4851/public_html/app/Exports/AnggotaExportWhere.php on line 8
+[12-Jul-2020 22:13:19 Asia/Jakarta] PHP Fatal error:  Declaration of App\Exports\AnggotaExportWhere::collection($tes) must be compatible with Maatwebsite\Excel\Concerns\FromCollection::collection() in /home/kesg4851/public_html/app/Exports/AnggotaExportWhere.php on line 9
+[13-Jul-2020 00:36:19 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Database/Connection.php on line 326
+[13-Jul-2020 00:42:50 Asia/Jakarta] PHP Fatal error:  Cannot use [] for reading in /home/kesg4851/public_html/app/Http/Controllers/GaleriController.php on line 222
+[16-Jul-2020 11:52:02 Asia/Jakarta] PHP Fatal error:  Interface 'App\Exports\WithHeadings' not found in /home/kesg4851/public_html/app/Exports/AnggotaExport.php on line 9
+[16-Jul-2020 15:31:55 Asia/Jakarta] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1195): Illuminate\Foundation\Application->make('config')
+#5 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(57):  in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Jul-2020 15:31:57 Asia/Jakarta] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1195): Illuminate\Foundation\Application->make('config')
+#5 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(57):  in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Jul-2020 15:32:02 Asia/Jakarta] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1195): Illuminate\Foundation\Application->make('config')
+#5 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(57):  in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[16-Jul-2020 15:32:08 Asia/Jakarta] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(1195): Illuminate\Foundation\Application->make('config')
+#5 /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Support/ServiceProvider.php(57):  in /home/kesg4851/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[17-Jul-2020 00:58:21 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/kesg4851/public_html/vendor/dompdf/dompdf/lib/Cpdf.php on line 4907
+[17-Jul-2020 00:59:52 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/kesg4851/public_html/vendor/dompdf/dompdf/lib/Cpdf.php on line 4898
+[17-Jul-2020 01:01:01 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/kesg4851/public_html/vendor/dompdf/dompdf/lib/Cpdf.php on line 4915
+[16-Aug-2020 15:42:25 Asia/Jakarta] PHP Fatal error:  Cannot redeclare App\Http\Controllers\OrganisasiController::kontak() in /home/kesg4851/public_html/app/Http/Controllers/OrganisasiController.php on line 289
+[16-Aug-2020 15:55:19 Asia/Jakarta] PHP Fatal error:  Cannot use App\Anggota as Anggota because the name is already in use in /home/kesg4851/public_html/app/Http/Controllers/OrganisasiController.php on line 15
+[09-Sep-2020 10:23:54 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/kesg4851/public_html/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php on line 530
+[18-Sep-2020 08:23:32 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/kesg4851/public_html/vendor/dompdf/dompdf/src/FrameDecorator/AbstractFrameDecorator.php on line 467
+[21-Sep-2020 08:01:37 Asia/Jakarta] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 4818296 bytes) in /home/kesg4851/public_html/vendor/dompdf/dompdf/src/Image/Cache.php on line 113

@@ -1,0 +1,83 @@
+.garis{
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.header__top {
+	background: #370617;
+}
+.text-content{
+    text-indent: 2em;
+}
+.latest  {
+	background: #F7F7F7;
+}
+.button-selengkapnya{
+    float: right;
+}
+/* struktur organisasi */
+ dt{
+   font-size: 20px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   width:15%;
+   margin-bottom: 10px;
+    
+}
+dd{
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+@media only screen and (max-width: 767px) {
+	dt, dd{
+		width: 100%;
+		float: left;
+    }
+}
+
+/* Foto Galeri */
+.galeri-foto{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.content-img {
+    position: relative;
+    font-family: Arial;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 5px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+.text{
+    color: #f7f7f7;
+    font-size: 12px;
+}
+.text-h4{
+    font-size: 14px;
+    color: white;
+    padding-top: 10px;
+}
+.text-detail{
+    text-indent: 2em;
+}
+
+/* Berita */
+.section-kontak{
+    margin-right: 50px;
+}
+.kontak{
+    margin-top: 5px; 
+    margin-left: 50px;
+    font-size: 20px;
+}
+.center{
+  margin: auto;
+  width: 60%;
+  padding:50px;
+  height:auto;
+}
+.center p{
+    text-align:left;
+}
