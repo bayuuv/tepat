@@ -38,7 +38,7 @@
                                 @if($pilihan_kedua != null || $pilihan_kedua != '' && $count != null)
                                 <div id="atas"><h5>{{ $pilihan_kedua }} &nbsp  {{ $count }}</h5></div>
                                 <!-- @else
-                                <h5 class="card-title">Yayasan</h5>&nbsp -->
+                                <h5 class="card-title">Pengurus Pusat</h5>&nbsp -->
                                 @endif
                                 <!-- </div> -->
                                 <div id="atas1"></div>
@@ -48,66 +48,66 @@
                                         <!-- <select id="pilih_kesatu" name="pilih_kesatu" onchange="pilihKesatu();" style="font-size:14px;">
                                             @if($id_level == '')
                                             <option value="1" selected>- Semua -</option>
-                                            <option value="2">Yayasan</option>
-                                            <option value="3">Wilayah</option>
-                                            <option value="4">Unit</option>
+                                            <option value="2">Pengurus Pusat</option>
+                                            <option value="3">Korwil</option>
+                                            <option value="4">Korcam</option>
                                             @elseif($id_level == '2')
                                             <option value="1">- Semua -</option>
-                                            <option value="2" selected>Yayasan</option>
-                                            <option value="3">Wilayah</option>
-                                            <option value="4">Unit</option>
+                                            <option value="2" selected>Pengurus Pusat</option>
+                                            <option value="3">Korwil</option>
+                                            <option value="4">Korcam</option>
                                             @elseif($id_level == '3')
                                             <option value="1">- Semua -</option>
-                                            <option value="2">Yayasan</option>
-                                            <option value="3" selected>Wilayah</option>
-                                            <option value="4">Unit</option>
+                                            <option value="2">Pengurus Pusat</option>
+                                            <option value="3" selected>Korwil</option>
+                                            <option value="4">Korcam</option>
                                             @elseif($id_level == '4')
                                             <option value="1">- Semua -</option>
-                                            <option value="2">Yayasan</option>
-                                            <option value="3">Wilayah</option>
-                                            <option value="4" selected>Unit</option>
+                                            <option value="2">Pengurus Pusat</option>
+                                            <option value="3">Korwil</option>
+                                            <option value="4" selected>Korcam</option>
                                             @endif
                                         </select> -->
                                         <select id="pilih_kesatu" name="pilih_kesatu" style="font-size:14px;">
                                             <option value="1" selected>- Semua -</option>
-                                            <option value="2">Yayasan</option>
-                                            <option value="3">Wilayah</option>
-                                            <option value="4">Unit</option>
+                                            <option value="2">Pengurus Pusat</option>
+                                            <option value="3">Korwil</option>
+                                            <option value="4">Korcam</option>
                                         </select>
                                     </div>
                                     <div id="divwilayah" style="display:none;">
                                       <div class="form-inline" style="padding-top:10px">
-                                        <label style="font-size:14px;">Pilih Wilayah</label>&nbsp
+                                        <label style="font-size:14px;">Pilih Korwil</label>&nbsp
                                         <div id="wilayah1"></div>
                                         <select id="pilihWilayah" name="pilih_kedua" style="font-size:14px;">
-                                          <option value="">Semua Wilayah</option>
+                                          <option value="">Semua Korwil</option>
                                         </select>
                                       </div>
                                     </div>
                                     <div id="divwilayah2" style="display:none;">
                                       <div class="form-inline" style="padding-top:10px">
-                                        <label style="font-size:14px;">Pilih Wilayah</label>&nbsp
+                                        <label style="font-size:14px;">Pilih Korwil</label>&nbsp
                                         <div id="wilayah2"></div>
                                         <select id="pilihWilayah" name="pilihWilayah" style="font-size:14px;">
-                                          <option value="">Semua Wilayah</option>
+                                          <option value="">Semua Korwil</option>
                                         </select>
                                       </div>
                                     </div>
                                     <div id="divunit" style="display:none;">
                                       <div class="form-inline" style="padding-top:10px">
-                                        <label style="font-size:14px;">Pilih Unit</label>&nbsp
+                                        <label style="font-size:14px;">Pilih Korcam</label>&nbsp
                                         <div id="unit1"></div>
                                         <select id="pilihUnit" name="pilih_kedua" style="font-size:14px;">
-                                          <option value="">Semua Unit</option>
+                                          <option value="">Semua Korcam</option>
                                         </select>
                                       </div>
                                     </div>
                                     <div id="divunit2" style="display:none;">
                                       <div class="form-inline" style="padding-top:10px">
-                                        <label style="font-size:14px;">Pilih Unit</label>&nbsp
+                                        <label style="font-size:14px;">Pilih Korcam</label>&nbsp
                                         <div id="unit2"></div>
                                         <select id="pilihUnit" name="pilihUnit" style="font-size:14px;">
-                                        <option value="">Semua Unit</option>
+                                        <option value="">Semua Korcam</option>
                                         </select>
                                       </div>
                                     </div>
@@ -323,7 +323,7 @@ $('select[name="pilih_kesatu"]').on('change', function() {
       dataType: "json",
       success:function(data) {
         $('#atas').remove();
-        $('#atas1').append('<div id="atas"><h5 class="card-title">Wilayah - '+ data.jml +'</h5></div>');
+        $('#atas1').append('<div id="atas"><h5 class="card-title">Korwil - '+ data.jml +'</h5></div>');
 
         document.getElementById("divwilayah").style.display = "block";
         document.getElementById("divwilayah2").style.display = "none";
@@ -331,7 +331,7 @@ $('select[name="pilih_kesatu"]').on('change', function() {
         document.getElementById("divunit2").style.display = "none";
         $('select[id="pilihWilayah"]').remove();
         $('#wilayah1').append('<select id="pilihWilayah" name="pilih_kedua" style="font-size:14px;">');
-        $('select[id="pilihWilayah"]').append('<option value="wilayah">- Semua Wilayah -</option>');
+        $('select[id="pilihWilayah"]').append('<option value="wilayah">- Semua Korwil -</option>');
         $.each(data.wilayah, function(key, value) {
           $('select[id="pilihWilayah"]').append('<option value="'+ key +'">'+ value +'</option>');
         });
@@ -390,13 +390,13 @@ $('select[name="pilih_kesatu"]').on('change', function() {
       dataType: "json",
       success:function(data) {
         $('#atas').remove();
-        $('#atas1').append('<div id="atas"><h5 class="card-title">Unit - '+ data.jml +'</h5></div>');
+        $('#atas1').append('<div id="atas"><h5 class="card-title">Korcam - '+ data.jml +'</h5></div>');
 
         document.getElementById("divwilayah").style.display = "none";
         document.getElementById("divwilayah2").style.display = "block";
         $('select[id="pilihWilayah"]').remove();
         $('#wilayah2').append('<select id="pilihWilayah" name="pilihWilayah" style="font-size:14px;">');
-        $('select[id="pilihWilayah"]').append('<option value="wilayah">- Semua Wilayah -</option>');
+        $('select[id="pilihWilayah"]').append('<option value="wilayah">- Semua Korwil -</option>');
         $.each(data.wilayah, function(key, value) {
           $('select[id="pilihWilayah"]').append('<option value="'+ key +'">'+ value +'</option>');
         });
@@ -405,7 +405,7 @@ $('select[name="pilih_kesatu"]').on('change', function() {
         document.getElementById("divunit").style.display = "block";
         $('select[id="pilihUnit"]').remove();
         $('#unit1').append('<select id="pilihUnit" name="pilih_kedua" style="font-size:14px;">');
-        $('select[id="pilihUnit"]').append('<option value="unit">- Semua Unit -</option>');
+        $('select[id="pilihUnit"]').append('<option value="unit">- Semua Korcam -</option>');
         $.each(data.unit, function(key, value) {
           $('select[id="pilihUnit"]').append('<option value="'+ key +'">'+ value +'</option>');
         });
@@ -524,7 +524,7 @@ $('#wilayah1').on('change', function() {
       dataType: "json",
       success:function(data) {
         $('#atas').remove();
-        $('#atas1').append('<div id="atas"><h5 class="card-title">Wilayah - '+ data.jml +'</h5></div>');
+        $('#atas1').append('<div id="atas"><h5 class="card-title">Korwil - '+ data.jml +'</h5></div>');
 
         $('#tables').DataTable().destroy();
     
@@ -633,13 +633,13 @@ $('#divwilayah2').on('change', function() {
       dataType: "json",
       success:function(data) {
         $('#atas').remove();
-        $('#atas1').append('<div id="atas"><h5 class="card-title">Unit - '+ data.jml +'</h5></div>');
+        $('#atas1').append('<div id="atas"><h5 class="card-title">Korcam - '+ data.jml +'</h5></div>');
 
         document.getElementById("divunit").style.display = "none";
         document.getElementById("divunit2").style.display = "block";
         $('select[id="pilihUnit"]').remove();
         $('#unit2').append('<select id="pilihUnit" name="pilih_kedua" style="font-size:14px;">');
-        $('select[id="pilihUnit"]').append('<option value="">- Semua Unit -</option>');
+        $('select[id="pilihUnit"]').append('<option value="">- Semua Korcam -</option>');
         $.each(data.unit, function(key, value) {
           $('select[id="pilihUnit"]').append('<option value="'+ key +'">'+ value +'</option>');
         });
@@ -702,7 +702,7 @@ $('#divunit2').on('change', function() {
       dataType: "json",
       success:function(data) {
         $('#atas').remove();
-        $('#atas1').append('<div id="atas"><h5 class="card-title">Unit - '+ data.jml +'</h5></div>');
+        $('#atas1').append('<div id="atas"><h5 class="card-title">Korcam - '+ data.jml +'</h5></div>');
 
         $('#tables').DataTable().destroy();
     
