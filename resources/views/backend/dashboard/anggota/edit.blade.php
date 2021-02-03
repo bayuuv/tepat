@@ -63,12 +63,41 @@
                                 @endif
                             </select>
                         </div>
-                        @if($level == 3)
-                        <div class="form-group" id="dpc" style="display:block;">
-                            <label for="id_akun_dpc">Pilih Pengurus Pusat</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                        @if($level == 2)
+                        <div class="form-group" id="dpc" style="display:none;">
+                            <label for="id_akun_dpc">Pilih Korwil</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_dpc" name="id_akun_dpc">
-                                <option value="">Pilih Pengurus Pusat</opdion>
+                                <option value="">Pilih Korwil</opdion>
+                                @foreach ($dpc as $items)
+                                @if($items['id_akun'] == $item['id_akun'])
+                                <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
+                                @else
+                                <option value="{{$items['id_akun']}}">{{$items['nama_akun']}}</option>
+                                @endif
+                                @endforeach
+                            </select>
+                        </div>
+                        <div class="form-group" id="pac" style="display:none;">
+                            <label for="id_akun_pac">Pilih Korcam</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                            <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
+                            <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_pac" name="id_akun_pac">
+                                <option value="">Pilih Korcam</opdion>
+                                @foreach ($pac as $items)
+                                @if($items['id_akun'] == $item['id_akun'])
+                                <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
+                                @else
+                                <option value="{{$items['id_akun']}}">{{$items['nama_akun']}}</option>
+                                @endif
+                                @endforeach
+                            </select>
+                        </div>
+                        @elseif($level == 3)
+                        <div class="form-group" id="dpc" style="display:block;">
+                            <label for="id_akun_dpc">Pilih Korwil</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                            <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
+                            <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_dpc" name="id_akun_dpc">
+                                <option value="">Pilih Korwil</opdion>
                                 @foreach ($dpc as $items)
                                 @if($items['id_akun'] == $item['id_akun'])
                                 <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
