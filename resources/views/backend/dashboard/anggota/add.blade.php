@@ -52,20 +52,20 @@
                             </select>
                         </div>
                         <div class="form-group" id="dpc" style="display:none;">
-                            <label for="id_akun_dpc">Pilih Wilayah</label>&nbsp<label style="color:red;">{{$errors->first('id_akun_dpc')}}</label>
+                            <label for="id_akun_dpc">Pilih Korwil</label>&nbsp<label style="color:red;">{{$errors->first('id_akun_dpc')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_dpc" name="id_akun_dpc">
-                                <option value="">Pilih Wilayah</opdion>
+                                <option value="">Pilih Korwil</opdion>
                                 @foreach ($dpc as $item)
                                 <option value="{{$item['id_akun']}}">{{$item['nama_akun']}}</option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="form-group" id="pac" style="display:none;">
-                            <label for="id_akun_pac">Pilih Unit</label>&nbsp<label style="color:red;">{{$errors->first('id_akun_pac')}}</label>
+                            <label for="id_akun_pac">Pilih Korcam</label>&nbsp<label style="color:red;">{{$errors->first('id_akun_pac')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_pac" name="id_akun_pac">
-                                <option value="">Pilih Unit</opdion>
+                                <option value="">Pilih Korcam</opdion>
                                 @foreach ($pac as $item)
                                 <option value="{{$item['id_akun']}}">{{$item['nama_akun']}}</option>
                                 @endforeach
