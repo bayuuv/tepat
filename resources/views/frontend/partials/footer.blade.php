@@ -5,9 +5,9 @@
             <div class="footer__copyright__text">
                 <!--<h4 class="mt-2" style="color:white;">Bagikan Web ini</h4>-->
                 <label class="mr-2" style="color:white;" >Bagikan</label>
-                <a class="mr-2" href="https://t.me/share/url?url=https://kesatriakeris.com/&text="><i class="fa fa-telegram" style="color:white;" aria-hidden="true"></i></a>
-                <a class="mr-2" href="https://wa.me/?text=https://kesatriakeris.com" ><i class="fa fa-whatsapp" style="color:white;" aria-hidden="true"></i></a>
-                <a class="mr-2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fkesatriakeris.com%2F&amp;src=sdkpreparse"><i class="fa fa-facebook" style="color:white;" aria-hidden="true"></i></a>
+                <a class="mr-2" href="https://t.me/share/url?url=https://temanparta.com/&text="><i class="fa fa-telegram" style="color:white;" aria-hidden="true"></i></a>
+                <a class="mr-2" href="https://wa.me/?text=https://temanparta.com/" ><i class="fa fa-whatsapp" style="color:white;" aria-hidden="true"></i></a>
+                <a class="mr-2" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftemanparta.com%2F&amp;src=sdkpreparse"><i class="fa fa-facebook" style="color:white;" aria-hidden="true"></i></a>
                  <!-- Copyright -->
                   <div class="footer-copyright py-2"  style="color:white;">Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved
                   </div>
