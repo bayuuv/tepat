@@ -49,26 +49,26 @@
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun" name="id_akun" onchange="editpilihCabang();">
                                 <option value="">Pilih Cabang</opdion>
                                 @if($level == 2)
-                                <option value="2" selected>DPP</option>
-                                <option value="3">DPC</option>
-                                <option value="4">PAC</option>
+                                <option value="2" selected>Pengurus Pusat</option>
+                                <option value="3">Korwil</option>
+                                <option value="4">Korcam</option>
                                 @elseif($level == 3)
-                                <option value="2">DPP</option>
-                                <option value="3" selected>DPC</option>
-                                <option value="4">PAC</option>
+                                <option value="2">Pengurus Pusat</option>
+                                <option value="3" selected>Korwil</option>
+                                <option value="4">Korcam</option>
                                 @elseif($level == 4)
-                                <option value="2">DPP</option>
-                                <option value="3">DPC</option>
-                                <option value="4" selected>PAC</option>
+                                <option value="2">Pengurus Pusat</option>
+                                <option value="3">Korwil</option>
+                                <option value="4" selected>Korcam</option>
                                 @endif
                             </select>
                         </div>
                         @if($level == 3)
                         <div class="form-group" id="dpc" style="display:block;">
-                            <label for="id_akun_dpc">Pilih DPC</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                            <label for="id_akun_dpc">Pilih Pengurus Pusat</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_dpc" name="id_akun_dpc">
-                                <option value="">Pilih DPC</opdion>
+                                <option value="">Pilih Pengurus Pusat</opdion>
                                 @foreach ($dpc as $items)
                                 @if($items['id_akun'] == $item['id_akun'])
                                 <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
@@ -79,10 +79,10 @@
                             </select>
                         </div>
                         <div class="form-group" id="pac" style="display:none;">
-                            <label for="id_akun_pac">Pilih PAC</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                            <label for="id_akun_pac">Pilih Korcam</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_pac" name="id_akun_pac">
-                                <option value="">Pilih PAC</opdion>
+                                <option value="">Pilih Korcam</opdion>
                                 @foreach ($pac as $items)
                                 @if($items['id_akun'] == $item['id_akun'])
                                 <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
@@ -94,10 +94,10 @@
                         </div>
                         @elseif($level == 4)
                         <div class="form-group" id="dpc" style="display:none;">
-                            <label for="id_akun_dpc">Pilih DPC</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                            <label for="id_akun_dpc">Pilih Korwil</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_dpc" name="id_akun_dpc">
-                                <option value="">Pilih DPC</opdion>
+                                <option value="">Pilih Korwil</opdion>
                                 @foreach ($dpc as $items)
                                 @if($items['id_akun'] == $item['id_akun'])
                                 <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
@@ -108,10 +108,10 @@
                             </select>
                         </div>
                         <div class="form-group" id="pac" style="display:block;">
-                            <label for="id_akun_pac">Pilih PAC</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
+                            <label for="id_akun_pac">Pilih Korcam</label>&nbsp<label style="color:red;">{{$errors->first('id_akun')}}</label>
                             <!-- <select theme="google" class="form-control form-control-lg" id="exampleFormControlSelect1" style="" name="dpc" placeholder="Pilih DPC" data-search="true"> -->
                             <select class="form-control form-control-lg selectpicker" data-live-search="true" id="id_akun_pac" name="id_akun_pac">
-                                <option value="">Pilih PAC</opdion>
+                                <option value="">Pilih Korcam</opdion>
                                 @foreach ($pac as $items)
                                 @if($items['id_akun'] == $item['id_akun'])
                                 <option value="{{$items['id_akun']}}" selected>{{$items['nama_akun']}}</option>
