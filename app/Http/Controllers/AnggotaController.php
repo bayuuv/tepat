@@ -163,7 +163,8 @@ class AnggotaController extends Controller
                 'is_active'
             );
 
-                $totalFiltered = $totalFiltered->join('sub_jabatan', 'sub_jabatan.id_sub_jabatan', 'anggota.id_sub_jabatan')
+                $totalFiltered = $totalFiltered->join('akun', 'akun.id_akun', 'anggota.id_akun')
+                ->join('sub_jabatan', 'sub_jabatan.id_sub_jabatan', 'anggota.id_sub_jabatan')
                 ->join('jabatan', 'jabatan.id_jabatan', 'sub_jabatan.id_jabatan');
 
                 if($getWilayah){
