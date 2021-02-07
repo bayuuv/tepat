@@ -102,11 +102,11 @@
                                                             <td width="2%">:</td>
                                                             <td style=" font-weight:bold"  class="texta">
                                                             @if($item->id_level == 2)
-                                                                Yayasan {{$item->nama_akun}}
+                                                                Pengurus {{$item->nama_akun}}
                                                             @elseif($item->id_level == 3)
-                                                                Wilayah {{$item->nama_akun}}
+                                                                Korwil {{$item->nama_akun}}
                                                             @elseif($item->id_level == 4)
-                                                               Unit {{$item->nama_akun}}
+                                                                Korcam {{$item->nama_akun}}
                                                             @else
                                                                 Tidak Ada
                                                             @endif
