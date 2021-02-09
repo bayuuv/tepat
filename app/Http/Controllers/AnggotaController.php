@@ -254,10 +254,15 @@ class AnggotaController extends Controller
                     ];
 
                     if(Session::get('level') == 'Super Admin' || Session::get('level') == 'Admin'){
+                        // $nestedData['opsi'] .= "
+                        // <a href='anggota/view_pdf/$r->no_anggota'> <span class='mdi mdi-eye' style='color:#32bf90;'></span></a>
+                        // <a href='anggota/edit/$r->no_anggota'> <span class='mdi mdi-lead-pencil' style='color:#32bf90;'></span></a>
+                        // <a href='url('anggota/delete/$r->no_anggota/$r->foto/$r->ktp)' onClick='return confirm(\"Yakin Menghapus ".$r->nama_anggota." ?\")'> <span class='mdi mdi-delete' style='color:#32bf90;'></i></button>
+                        // ";
+
                         $nestedData['opsi'] .= "
                         <a href='anggota/view_pdf/$r->no_anggota'> <span class='mdi mdi-eye' style='color:#32bf90;'></span></a>
                         <a href='anggota/edit/$r->no_anggota'> <span class='mdi mdi-lead-pencil' style='color:#32bf90;'></span></a>
-                        <a href='url('anggota/delete/$r->no_anggota/$r->foto/$r->ktp)' onClick='return confirm(\"Yakin Menghapus ".$r->nama_anggota." ?\")'> <span class='mdi mdi-delete' style='color:#32bf90;'></i></button>
                         ";
                         
                         $nestedData['opsi'] .= "</center>";

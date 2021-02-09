@@ -54,8 +54,8 @@
                             <form class="form-group pull-right" action="{{url('dpp/delete/'.$item['id_dewan'])}}" method="POST">
                               {{csrf_field()}}
                               {{method_field('delete')}}
-                              <a href="{{url('dpp/edit/'.$item['id_dewan'])}}"> <span class="mdi mdi-lead-pencil" style="color:#32bf90;"></span></a>
-                              <button type="submit" style="background:none;border:none;color:#007bff;"><span class="mdi mdi-delete" style="color:#32bf90;"></i></button>
+                              <a href="{{url('dpp/edit/'.$item['id_dewan'])}}" <span class="mdi mdi-lead-pencil" style="color:#32bf90;"></span></a>
+                              <!-- <button type="submit" style="background:none;border:none;color:#007bff;"><span class="mdi mdi-delete" style="color:#32bf90;"></i></button> -->
                             </form>
                           </td>
                         </tr>

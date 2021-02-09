@@ -55,7 +55,7 @@
                               {{csrf_field()}}
                               {{method_field('delete')}}
                               <a href="{{url('dpc/edit/'.$item['id_dewan'])}}"> <span class="mdi mdi-lead-pencil" style="color:#32bf90;"></span></a>
-                              <button type="submit" style="background:none;border:none;color:#007bff;"><span class="mdi mdi-delete" style="color:#32bf90;"></i></button>
+                              <!-- <button type="submit" style="background:none;border:none;color:#007bff;"><span class="mdi mdi-delete" style="color:#32bf90;"></i></button> -->
                             </form>
                           </td>
                         </tr>

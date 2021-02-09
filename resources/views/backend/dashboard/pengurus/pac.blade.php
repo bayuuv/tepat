@@ -102,7 +102,7 @@
                           <td>
                             <form class="form-group pull-right" action="{{url('pengurus/delete-pac/'.$item->no_anggota)}}" method="GET">
                               <a href="{{url('pengurus/edit-pac/'.$item->no_anggota)}}"> <span class="mdi mdi-lead-pencil" style="color:#32bf90;"></span></a>
-                              <button type="submit" style="background:none;border:none;color:#007bff;"><span class="mdi mdi-delete" style="color:#32bf90;"></i></button>
+                              <!-- <button type="submit" style="background:none;border:none;color:#007bff;"><span class="mdi mdi-delete" style="color:#32bf90;"></i></button> -->
                             </form>
                           </td>
                         </tr>
