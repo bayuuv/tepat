@@ -352,7 +352,7 @@ class OrganisasiController extends Controller
                                     ->where('id_dewan', $id_wil)
                                     ->get();
                                     
-                $pac = Akun::select('nama_akun')->where('id_akun', $id_wil)->first();
+                $pac = Akun::select('nama_akun')->where('id_dewan', $id_wil)->first();
         
                 $logoWeb = $dataLogo->logo;
                 $judul = $dataJudul->judul;
